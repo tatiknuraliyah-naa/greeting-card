@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>For You ♡</title>
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- =====================================
+         BACKGROUND DECORATION
+    ====================================== -->
+
+    <div class="background">
+
+        <div class="bg-circle circle-one"></div>
+
+        <div class="bg-circle circle-two"></div>
+
+        <div class="bg-circle circle-three"></div>
+
+        <div class="bg-circle circle-four"></div>
+
+        <div class="floating-heart heart-one">♡</div>
+
+        <div class="floating-heart heart-two">♡</div>
+
+        <div class="floating-heart heart-three">♡</div>
+
+    </div>
+
+
+    <!-- =====================================
+         MUSIC
+         
+         File musik:
+         asset/ultah.mp4
+    ====================================== -->
+
+    <video
+        id="birthdayMusic"
+        class="hidden-media"
+        loop
+        playsinline
+        preload="auto"
+    >
+        <source
+            src="asset/ultah.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+
+    <!-- =====================================
+         MUSIC CONTROL
+    ====================================== -->
+
+    <button
+        id="musicButton"
+        class="music-button"
+        type="button"
+        aria-label="Kontrol musik"
+    >
+        🔇
+    </button>
+
+
+    <!-- =====================================
+         MAIN CARD
+    ====================================== -->
+
+    <main class="main-container">
+
+        <div class="greeting-card">
+
+
+            <!-- =================================
+                 PAGE 1
+                 ENVELOPE
+            ================================== -->
+
+            <section
+                class="page page-one active"
+                id="page1"
+            >
+
+                <div class="small-label">
+                    A LITTLE SOMETHING FOR YOU
+                </div>
+
+
+                <!-- ENVELOPE -->
+
+                <div
+                    class="envelope-wrapper"
+                    id="envelopeWrapper"
+                >
+
+                    <div class="envelope">
+
+                        <!-- Kertas di dalam -->
+                        <div class="envelope-paper">
+
+                            <span>♡</span>
+
+                        </div>
+
+
+                        <!-- Badan amplop -->
+                        <div class="envelope-body"></div>
+
+
+                        <!-- Flap -->
+                        <div class="envelope-flap"></div>
+
+
+                        <!-- Lipatan depan -->
+                        <div class="envelope-front"></div>
+
+
+                        <!-- Seal -->
+                        <div class="envelope-seal">
+                            ♥
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <h1 class="main-title">
+
+                    Open this<br>
+
+                    <span>when you're ready</span>
+
+                </h1>
+
+
+                <p class="intro-text">
+
+                    Ada sesuatu kecil yang
+                    mau aku kasih ke kamu.
+
+                </p>
+
+
+                <button
+                    class="primary-button"
+                    id="openCardButton"
+                    type="button"
+                >
+
+                    Open Card
+
+                    <span>✦</span>
+
+                </button>
+
+
+                <div class="page-indicator">
+
+                    <span class="current">01</span>
+                    <span>/</span>
+                    <span>05</span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 PAGE 2
+                 HAPPY BIRTHDAY
+            ================================== -->
+
+            <section
+                class="page page-two"
+                id="page2"
+            >
+
+                <div class="birthday-decoration">
+
+                    <span>✦</span>
+                    <span>♡</span>
+                    <span>✦</span>
+
+                </div>
+
+
+                <div class="cake-container">
+
+                    <div class="cake-glow"></div>
+
+                    <div class="cake-emoji">
+                        🎂
+                    </div>
+
+                </div>
+
+
+                <div class="small-label">
+                    TODAY IS YOUR DAY
+                </div>
+
+
+                <h2 class="page-title">
+
+                    Happy<br>
+
+                    <span>Birthday!</span>
+
+                </h2>
+
+
+                <p class="page-description">
+
+                    Hari ini adalah hari
+                    yang layak dirayakan.
+
+                    <br><br>
+
+                    Karena hari ini,
+                    seseorang seperti kamu
+                    bertambah satu tahun lagi.
+
+                </p>
+
+
+                <button
+                    class="primary-button"
+                    type="button"
+                    data-next-page
+                >
+
+                    lanjut
+
+                    <span>→</span>
+
+                </button>
+
+
+                <div class="page-indicator">
+
+                    <span>02</span>
+                    <span>/</span>
+                    <span>05</span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 PAGE 3
+                 WISHES
+            ================================== -->
+
+            <section
+                class="page page-three"
+                id="page3"
+            >
+
+                <div class="star-decoration">
+
+                    <span>✦</span>
+
+                    <span>✧</span>
+
+                    <span>✦</span>
+
+                </div>
+
+
+                <div class="small-label">
+                    JUST A LITTLE REMINDER
+                </div>
+
+
+                <h2 class="page-title">
+
+                    You deserve
+
+                    <br>
+
+                    <span>good things.</span>
+
+                </h2>
+
+
+                <div class="wish-list">
+
+                    <div class="wish-item">
+
+                        <div class="wish-icon">
+                            ♡
+                        </div>
+
+                        <p>
+                            Semoga kamu menemukan
+                            lebih banyak alasan
+                            untuk tersenyum.
+                        </p>
+
+                    </div>
+
+
+                    <div class="wish-item">
+
+                        <div class="wish-icon">
+                            ✦
+                        </div>
+
+                        <p>
+                            Semoga hal-hal yang
+                            kamu usahakan perlahan
+                            menemukan jalannya.
+                        </p>
+
+                    </div>
+
+
+                    <div class="wish-item">
+
+                        <div class="wish-icon">
+                            ☼
+                        </div>
+
+                        <p>
+                            Semoga tahun ini
+                            membawa banyak
+                            cerita baik.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="primary-button"
+                    type="button"
+                    data-next-page
+                >
+
+                    masih ada satu lagi
+
+                    <span>→</span>
+
+                </button>
+
+
+                <div class="page-indicator">
+
+                    <span>03</span>
+                    <span>/</span>
+                    <span>05</span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 PAGE 4
+                 PERSONAL MESSAGE
+            ================================== -->
+
+            <section
+                class="page page-four"
+                id="page4"
+            >
+
+                <div class="small-label">
+                    A MESSAGE FOR YOU
+                </div>
+
+
+                <h2 class="message-title">
+
+                    Dear you,
+
+                    <span>♡</span>
+
+                </h2>
+
+
+                <div class="message-paper">
+
+                    <div class="paper-decoration">
+                        ✦
+                    </div>
+
+
+                    <p>
+
+                        Selamat ulang tahun. 🫶
+
+                        <br><br>
+
+                        Aku nggak tahu harus mulai
+                        dari mana, jadi mungkin cukup
+                        dengan bilang semoga kamu
+                        selalu dikelilingi hal-hal baik.
+
+                        <br><br>
+
+                        Semoga semua hal yang sedang
+                        kamu usahakan sekarang,
+                        satu per satu menemukan
+                        jalannya.
+
+                        <br><br>
+
+                        Semoga kamu punya banyak
+                        momen kecil yang nantinya
+                        berubah menjadi kenangan
+                        yang indah.
+
+                        <br><br>
+
+                        Dan semoga tahun ini membawa
+                        lebih banyak tawa, cerita,
+                        kesempatan, dan alasan untuk
+                        merasa bersyukur.
+
+                        <br><br>
+
+                        Pokoknya...
+
+                        <br><br>
+
+                        <strong>
+                            Happy Birthday. 🤍
+                        </strong>
+
+                        <br><br>
+
+                        Jangan lupa bahagia hari ini.
+
+                    </p>
+
+
+                    <div class="paper-decoration bottom">
+                        ♡
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="primary-button"
+                    type="button"
+                    data-next-page
+                >
+
+                    one last thing
+
+                    <span>→</span>
+
+                </button>
+
+
+                <div class="page-indicator">
+
+                    <span>04</span>
+                    <span>/</span>
+                    <span>05</span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 PAGE 5
+                 MAKE A WISH
+            ================================== -->
+
+            <section
+                class="page page-five"
+                id="page5"
+            >
+
+                <div class="gift-container">
+
+                    <div class="gift-glow"></div>
+
+                    <div class="gift-emoji">
+                        🎁
+                    </div>
+
+                </div>
+
+
+                <div class="small-label">
+                    BEFORE YOU LEAVE
+                </div>
+
+
+                <h2 class="page-title">
+
+                    Make a
+
+                    <br>
+
+                    <span>Wish ✨</span>
+
+                </h2>
+
+
+                <p class="page-description">
+
+                    Tutup mata sebentar.
+
+                    <br>
+
+                    Pikirkan satu hal yang
+                    paling kamu inginkan.
+
+                    <br><br>
+
+                    Semoga suatu hari nanti
+                    kamu bisa melihatnya
+                    menjadi nyata.
+
+                </p>
+
+
+                <button
+                    class="primary-button wish-button"
+                    id="makeWishButton"
+                    type="button"
+                >
+
+                    <span>✦</span>
+
+                    Make a Wish
+
+                    <span>✦</span>
+
+                </button>
+
+
+                <div class="page-indicator">
+
+                    <span>05</span>
+                    <span>/</span>
+                    <span>05</span>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================
+         WISH POPUP
+    ====================================== -->
+
+    <div
+        class="popup-overlay"
+        id="wishPopup"
+        aria-hidden="true"
+    >
+
+        <div
+            class="wish-popup"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="wishPopupTitle"
+        >
+
+            <div class="popup-stars">
+
+                ✦ &nbsp; ✧ &nbsp; ✦
+
+            </div>
+
+
+            <div class="popup-icon">
+
+                🌙
+
+            </div>
+
+
+            <h2 id="wishPopupTitle">
+
+                Your wish has<br>
+
+                been made ✨
+
+            </h2>
+
+
+            <p>
+
+                Semoga apa pun yang kamu
+                semogakan hari ini,
+                pelan-pelan menemukan jalannya
+                untuk menjadi nyata.
+
+                <br><br>
+
+                Some wishes just need
+                a little time. 🤍
+
+            </p>
+
+
+            <div class="popup-heart">
+
+                ♡
+
+            </div>
+
+
+            <button
+                class="popup-button"
+                id="closeWishButton"
+                type="button"
+            >
+
+                okay, thank you ♡
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         CONFETTI CONTAINER
+    ====================================== -->
+
+    <div
+        id="confettiContainer"
+        class="confetti-container"
+        aria-hidden="true"
+    ></div>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
